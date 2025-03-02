@@ -1,0 +1,113 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Press+Start+2P&display=swap');
+
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body Styling */
+body {
+    background: url('bg_web.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    backdrop-filter: blur(1px); /* Subtle blur effect */
+}
+
+/* Login Container */
+.login {
+    width: 90%;
+    max-width: 500px;
+    padding: 90px;
+    background: rgba(0, 0, 0, 0.8); /* Dark overlay */
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+    border: 2px solid #ff4757; /* Neon border */
+}
+
+/* Title */
+.login h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+    color: #ff6b81;
+    font-weight: 600;
+    text-shadow: 0px 0px 8px rgba(255, 107, 129, 0.8);
+    font-family: 'Press Start 2P', cursive;
+}
+
+/* Input Fields */
+.login input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    text-align: center;
+    outline: none;
+    transition: 0.3s;
+    border-bottom: 2px solid #ff4757;
+}
+
+/* Placeholder Styling */
+.login input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* Focus Effect */
+.login input:focus {
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+}
+
+/* Login Button */
+.login button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    background: linear-gradient(135deg, #ff4757, #ff6b81);
+    color: white;
+    transition: 0.3s ease-in-out;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Button Hover */
+.login button:hover {
+    background: linear-gradient(135deg, #ff6b81, #ff4757);
+    transform: scale(1.05);
+    box-shadow: 0px 0px 10px rgba(255, 107, 129, 0.8);
+}
+
+/* Links (Forgot Password & Sign Up) */
+.login .links {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.login .links a {
+    color: #ff6b81;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.login .links a:hover {
+    color: #ff4757;
+    text-shadow: 0px 0px 5px rgba(255, 71, 87, 0.8);
+}
